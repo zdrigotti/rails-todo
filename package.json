@@ -1,0 +1,16 @@
+{
+  "name": "todo",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "3.5",
+    "jquery": "^3.3.1",
+    "tailwindcss": "^0.7.3"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Zach Rigotti <zdrigotti@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
+}

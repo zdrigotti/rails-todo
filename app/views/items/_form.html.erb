@@ -1,0 +1,4 @@
+<%= form_for([@list, @list.items.build]) do |f| %>
+  <%= f.text_field :content, class: "input input:focus" %>
+  <%= f.submit "+", class: "btn btn:hover ml-2" %>
+<% end %>

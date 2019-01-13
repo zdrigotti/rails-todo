@@ -1,0 +1,12 @@
+<% if item.complete %>
+  <div class="line-through my-2">
+    <%= item.content %>
+  </div>
+<% else %>
+  <div>
+    <div class="inline-flex my-2">
+      <%= button_to "", complete_list_item_path(@list, item.id), method: :patch, class: "inline-1 border-2 border-grey bg-white font-bold rounded h-4 w-1 text-white hover:border-indigo cursor-pointer" %>
+      <span class="inline-1 ml-2"><%= item.content %></span>
+    </div>
+  </div>
+<% end %>

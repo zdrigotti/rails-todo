@@ -1,0 +1,26 @@
+<%= form_for(@list) do |list| %>
+  <% if @list.errors.any? %>
+    <div>
+      <ul>
+      <% @list.errors.full_messages.each do |msg| %>
+        <li class="mt-2 -ml-4 text-red"><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="mt-2">
+    <%= list.label :name, class: "text-grey-darker" %><br>
+    <%= list.text_field :name, class: "input input:focus" %>
+  </div>
+
+  <div class="mt-2">
+    <%= list.label :description, class: "text-grey-darker" %><br>
+    <%= list.text_field :description, class: "input input:focus" %>
+  </div>
+  
+  <div class="inline-flex mt-4">
+    <%= list.submit "Accept", class: "btn btn:hover inline-1" %>
+    <%= link_to "Cancel", lists_path, class: "btn btn:hover inline-1 ml-2" %>
+  </div>
+<% end %>

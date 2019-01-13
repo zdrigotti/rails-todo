@@ -1,0 +1,18 @@
+<div class="screen">
+  <% if @lists.length > 0 %>
+    <% @lists.each do |list| %>
+      <div class="card mb-4">
+        <h2><%= link_to list.name, list, class: "text-indigo no-underline hover:indigo-dark hover:underline" %></h2>
+        <p class="sub-header"><%= list.description %></p>
+      </div>
+    <% end %>
+  <% else %>
+    <div class="w-full text-center">
+      <h2 class="text-white">Click "New List" to get started!</h2>
+    </div>
+  <% end %>
+
+  <div class="w-full text-center mt-6">
+    <%= link_to "+ New List", new_list_path, class: "btn btn:hover" %>
+  </div>
+</div>
