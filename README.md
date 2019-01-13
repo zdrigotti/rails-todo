@@ -1,24 +1,5 @@
-# README
+# Rails Todo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple to do app made with Rails, styled with Tailwind CSS, and backed by PostgreSQL.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+If you want to play around with it, the app is currently hosted on Heroku: [intense-beyond-98105.herokuapp.com](https://intense-beyond-98105.herokuapp.com/)
