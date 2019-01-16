@@ -62,11 +62,20 @@
  */
 
  .screen {
-    @apply w-full h-screen bg-teal-lighter pt-8;
+    @apply w-full h-screen bg-teal-lighter pt-8 px-4;
  }
 
  .card {
-    @apply bg-white w-3/4 mx-auto shadow-md rounded px-6 pt-4 pb-6;
+    @apply bg-white mx-auto shadow-md rounded px-6 pt-4 pb-6;
+    @screen sm {
+      @apply w-full;
+    }
+    @screen md {
+      @apply w-3/4;
+    }
+    @screen lg {
+      @apply w-1/2;
+    }
  }
 
  .header {
